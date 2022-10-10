@@ -1,0 +1,9 @@
+.Header {
+    height: var(--header-height);
+    margin: 0 auto;
+    background-color: lightcoral;
+}
+
+a {
+    margin: 0 10px
+}

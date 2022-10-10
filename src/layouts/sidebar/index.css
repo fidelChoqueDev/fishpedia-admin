@@ -1,0 +1,5 @@
+.Sidebar {
+    background: lightgreen;
+    width: var(--sidebar-width);
+    height: calc(100vh - var(--header-height))
+}
