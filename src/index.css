@@ -55,3 +55,7 @@ code {
 .col {
   flex-direction: column;
 }
+
+.space-between {
+  justify-content: space-between;
+}
