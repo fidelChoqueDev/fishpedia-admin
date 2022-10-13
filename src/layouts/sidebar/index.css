@@ -2,4 +2,26 @@
   background: lightgreen;
   width: var(--sidebar-width);
   height: calc(100vh - var(--header-backHeight));
+
+}
+
+.content {
+  height: 50vh;
+  border: 1px solid red;
+
+}
+
+.sidebarItem {
+  border: 1px solid blue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 12px;
+  margin: 7px 15px;
+  border-radius: 6px;
+  background-color: var(--buttonBackground);
+}
+
+a {
+  text-decoration: none;
 }
