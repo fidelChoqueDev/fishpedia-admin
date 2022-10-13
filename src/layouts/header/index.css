@@ -1,98 +1,103 @@
+.bgHeader {
+  background-image: url("../../assets/top-left-shape.png");
+  background-repeat: no-repeat;
+  height: 200px;
+  margin: 0;
+  padding: 0;
+}
+
 .Header {
-    height: var(--header-height);
-    margin: 0 auto;
-    width: 100%;
+  height: var(--header-height);
+  margin: 0 auto;
+  width: 100%;
 }
 
 img {
-    height: 40px
+  height: 40px;
 }
 
 .routes {
-    margin: 10px;
-    background-color: lightblue;
-    width: 100%;
-    padding: auto 8px
+  margin-right: 5rem;
+  /*background-color: lightblue;*/
+  width: 100%;
+  /*padding: auto 8px;*/
 }
 
 .mobileRoute {
-    height: 100%;
-    display: none;
-
+  height: 100%;
+  display: none;
 }
 
 .logo {
-    margin-left: 10px
+  margin-left: 1.5rem;
 }
 
-
 a {
-    margin: 0 10px;
-    text-decoration: none;
-    color: black;
-    font-weight: 700;
+  margin: 0 10px;
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
 }
 
 .line {
-    width: 30px;
-    border: 3px solid black;
-    margin: 5px
+  width: 30px;
+  border: 3px solid white;
+  margin: 5px;
 }
 
 button {
-    background-color: transparent;
-    border: none;
+  background-color: transparent;
+  border: none;
 }
 
 .menu {
-    margin-right: 10px;
-    position: relative;
-    display: inline-block;
+  /*margin-right: 10px;*/
+  position: relative;
+  display: inline-block;
 }
 
 .menu-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
 }
 
 .menu:hover .menu-content {
-    display: block;
-    right: 5px;
-    border-radius: 20px;
+  display: block;
+  right: 5px;
+  border-radius: 20px;
 }
 
 .menu:hover .menu-content .route {
-    display: flex;
-    flex-direction: column;
-    background-color: white;
-
-
+  display: flex;
+  flex-direction: column;
+  background-color: white;
 }
 
 .menu:hover .menu-content .route a {
-    margin: 0;
-    padding: 10px;
-    border-bottom: 1px solid lightgray;
+  margin: 0;
+  padding: 10px;
+  border-bottom: 1px solid lightgray;
 }
 
 .menu:hover .menu-content .route a:hover {
-    background-color: lightgray;
+  background-color: lightgray;
 }
 
-
-
 /* MOBILE RESPONSIVENESS */
-@media screen and (max-width:768px) {
-    .route {
-        display: none;
-    }
+@media screen and (max-width: 768px) {
+  .route {
+    display: none;
+  }
 
-    .mobileRoute {
-        display: flex;
-    }
+  .mobileRoute {
+    display: flex;
+    margin-right: 1.5rem;
+  }
+  a {
+    color: var(--background);
+  }
 }
