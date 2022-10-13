@@ -37,7 +37,7 @@ code {
 .page {
   height: calc(100vh - var(--header-backHeight));
   width: 100vw;
-  background-color: lightblue;
+  /*background-color: lightblue;*/
 }
 
 /* CSS HELPERS */

@@ -1,5 +1,16 @@
 .Sidebar {
-  background: lightgreen;
+  /*background: lightgreen;*/
   width: var(--sidebar-width);
   height: calc(100vh - var(--header-backHeight));
+  flex-direction: column;
+}
+.group {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: flex-start;
+}
+.logout {
 }
