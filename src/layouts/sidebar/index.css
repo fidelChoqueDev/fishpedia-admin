@@ -1,39 +1,26 @@
 .Sidebar {
-  /*background: lightgreen;*/
   width: var(--sidebar-width);
   height: calc(100vh - var(--header-backHeight));
-<<<<<<< HEAD
-  flex-direction: column;
-}
-.group {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  align-items: center;
-  align-content: flex-start;
-}
-.logout {
-=======
+  display: grid;
 
->>>>>>> dca9296298d7de7e52f6b8079849c773bd3da6c5
+  margin: auto 1rem;
 }
 
 .content {
-  height: 50vh;
-  border: 1px solid red;
-
+  height: calc(70vh - var(--header-backHeight));
+  margin: auto auto;
 }
 
 .sidebarItem {
-  border: 1px solid blue;
+  border: 0px solid blue;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 8px 12px;
-  margin: 7px 15px;
-  border-radius: 6px;
+  padding: 0.5rem 1.5rem;
+  margin: 1rem 3rem;
+  border-radius: 5px;
   background-color: var(--buttonBackground);
+  z-index: 1;
 }
 
 a {

@@ -1,9 +1,9 @@
 :root {
   --header-backHeight: 200px;
   --header-height: 100px;
-  --sidebar-width: 300px;
+  --sidebar-width: 400px;
   --background: #033059;
-  --buttonBackground: #0577be;
+  --buttonBackground: #045f98;
   --panelBackground: #f1e4ee;
   --highlited: #049dbf;
   --backDetail: #025273;
@@ -38,6 +38,15 @@ code {
   height: calc(100vh - var(--header-backHeight));
   width: 100vw;
   /*background-color: lightblue;*/
+}
+
+.panel {
+  background-color: var(--panelBackground);
+  display: block;
+  min-height: calc(70vh - var(--header-backHeight));
+  min-width: 60vw;
+  border-radius: 10px;
+  padding: 2rem;
 }
 
 /* CSS HELPERS */

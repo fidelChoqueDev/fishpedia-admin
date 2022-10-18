@@ -3,7 +3,16 @@ import ReactDOM from "react-dom/client";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./index.css";
 import { Footer, Header, Sidebar } from "./layouts";
-import { About, Contact, Home } from "./pages";
+import {
+  About,
+  AdminUsers,
+  Contact,
+  Country,
+  Fishes,
+  Home,
+  Region,
+  TypeWater,
+} from "./pages";
 import reportWebVitals from "./reportWebVitals";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -17,7 +26,13 @@ root.render(
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
-            <Route path="contact" element={<Contact />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/country" element={<Country />} />
+            <Route path="/region" element={<Region />} />
+            <Route path="/fishes" element={<Fishes />} />
+            <Route path="/typewater" element={<TypeWater />} />
+            <Route path="/adminusers" element={<AdminUsers />} />
+            {/*} <Route path="/login" element={<Login />} />{*/}
           </Routes>
         </div>
       </div>
