@@ -4,6 +4,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./index.css";
 import { Footer, Header, Sidebar } from "./layouts";
 import { About, Contact, Home } from "./pages";
+import CrudFish from "./pages/CrudFish/CrudFish";
 import reportWebVitals from "./reportWebVitals";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -17,7 +18,8 @@ root.render(
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
-            <Route path="contact" element={<Contact />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/fish" element={<CrudFish/>} />
           </Routes>
         </div>
       </div>
