@@ -1,6 +1,7 @@
 .login-container {
   width: 100%;
   display: flex;
+  margin-top: -150px;
   align-items: center;
   justify-content: center;
 }
@@ -18,15 +19,13 @@
   gap: 20px;
 }
 
+.login-form {
+  width: 80%;
+}
+
 .login-card > span {
   font-weight: bold;
   font-size: 17px;
-}
-
-.login-card > input {
-  border: none;
-  height: 30px;
-  width: 80%;
 }
 
 .login-card > a {
