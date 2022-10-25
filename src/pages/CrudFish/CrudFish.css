@@ -46,6 +46,10 @@
   cursor: pointer;
 }
 
+.options-button:active {
+  transform: scale(0.9);
+}
+
 .options-button > img {
   width: 25px;
   height: auto;
