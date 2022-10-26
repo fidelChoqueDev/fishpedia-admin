@@ -1,26 +1,55 @@
-import LogoImage from '../../assets/logo_image.png'
-import LoginImage from '../../assets/icon/login.png'
-import './RegisterPage.css'
+import { useForm } from 'react-hook-form';
+import LogoImage from '../assets/logo_image.svg'
+import Registro from '../assets/Registro.png'
+import Reset from '../assets/Reset.png'
+import '../componentes/RegisterPage.css'
 
-const RegisterPage = () => {
+function RegisterPage () {
+  const {register, formState: {errors}, watch, handleSubmit} = useForm({
+    defaultValues: {
+      nombre: 'Luis',
+      email: 'nombre@gmail.com',
+      password: '1234',
+      repassword: '1234'
+    }
+  });
+
+  const onSubmit = (data) => {
+    console.log(data);
+  }
+
   return (
-    <div className='login-container'>
-      <div className='login-card'>
-        <img src={LogoImage} alt="logo" />
-        <span>Sign In your account</span>
+      
+      <form onSubmit={handleSubmit(onSubmit)} className='boxmain'>
+        <p>Bienvenido: {watch('nombre')}</p>
+        <div className='reg-card'>
+          <img className='imgLogo' src={LogoImage} alt="logo" />
+          <h2 className='titleRegister'>Register your account</h2>
 
-        <input type="text" placeholder='Nick'/>
-        <input type="email" placeholder='Email address'/>
-        <input type="password" placeholder='Password'/>
-        <input type="password" placeholder='Reenter Password'/>
+          <input type="text" {...register('nombre', {required:true, maxLength:10})} placeholder='Nick'/>
+          {errors.nombre?.type === 'required' && <p>El campo Nombre es requerido</p>}
+          {errors.nombre?.type === 'maxLength' && <p>El campo nombre debe tener menos de 10 caracteres</p>}
+
+          <input type="email" {...register('email', {required: true, pattern: /^[^\s@]+@[^\s@]+\.[^\s@]+$/i })} placeholder='Email address'/>
+
+          <input type="password" {...register('password', {required:true,maxLength:12})} placeholder='Password'/>
+          <input type="password" {...register('repassword', {required:true,maxLength:12})} placeholder='Reenter Password'/>
         
-        <button className='login-button'>
-          <img src={LoginImage} alt="lock-logo" />
-          <span>Sign In</span>
-        </button>
-      </div>
-    </div>
-  )
+          <div className='boxbutton'>
+            <button className='reg-button' type="submit">
+              <img src={Registro} className="" alt="Logo Registro"/>
+              Register
+            </button>
+
+            <button className='reg-button' type="reset">
+            <img src={Reset} className="" alt="Logo Registro"/>
+              Reset
+            </button>
+
+          </div>          
+        </div>
+      </form>        
+  );
 }
 
-export default Login
+export default RegisterPage;
