@@ -3,6 +3,7 @@ import ReactDOM from "react-dom/client";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./index.css";
 import { Footer, Header, Sidebar } from "./layouts";
+import Login from "./pages/login/Login";
 import CrudFish from "./pages/CrudFish/CrudFish";
 import {
   About,
@@ -27,12 +28,13 @@ root.render(
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/login" element={<Login />} />
+
             <Route path="/fishes" element={<CrudFish/>} />
             <Route path="/country" element={<Country />} />
             <Route path="/region" element={<Region />} />
             <Route path="/typewater" element={<TypeWater />} />
             <Route path="/adminusers" element={<AdminUsers />} />
-            {/*} <Route path="/login" element={<Login />} />{*/}
           </Routes>
         </div>
       </div>
