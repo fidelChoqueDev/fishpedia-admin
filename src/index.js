@@ -3,8 +3,17 @@ import ReactDOM from "react-dom/client";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./index.css";
 import { Footer, Header, Sidebar } from "./layouts";
-import { About, Contact, Home } from "./pages";
 import Login from "./pages/login/Login";
+import CrudFish from "./pages/CrudFish/CrudFish";
+import {
+  About,
+  AdminUsers,
+  Contact,
+  Country,
+  Home,
+  Region,
+  TypeWater,
+} from "./pages";
 import reportWebVitals from "./reportWebVitals";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -20,6 +29,12 @@ root.render(
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/login" element={<Login />} />
+
+            <Route path="/fishes" element={<CrudFish/>} />
+            <Route path="/country" element={<Country />} />
+            <Route path="/region" element={<Region />} />
+            <Route path="/typewater" element={<TypeWater />} />
+            <Route path="/adminusers" element={<AdminUsers />} />
           </Routes>
         </div>
       </div>

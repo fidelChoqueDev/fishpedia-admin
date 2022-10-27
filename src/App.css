@@ -1,6 +1,6 @@
 .App {
-    height: calc(100vh - var(--header-height));
-    width: calc(100vw - var(--sidebar-width));
-    border: 1px solid blue;
-    background-color: lightblue;
+  height: calc(100vh - var(--header-height));
+  width: calc(100vw - var(--sidebar-width));
+  border: 1px solid blue;
+  /*background-color: lightblue;*/
 }
