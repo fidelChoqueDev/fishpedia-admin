@@ -1,5 +1,28 @@
 .Sidebar {
-  background: lightgreen;
   width: var(--sidebar-width);
   height: calc(100vh - var(--header-backHeight));
+  display: grid;
+
+  margin: auto 1rem;
+}
+
+.content {
+  height: calc(70vh - var(--header-backHeight));
+  margin: auto auto;
+}
+
+.sidebarItem {
+  border: 0px solid blue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 1.5rem;
+  margin: 1rem 3rem;
+  border-radius: 5px;
+  background-color: var(--buttonBackground);
+  z-index: 1;
+}
+
+a {
+  text-decoration: none;
 }

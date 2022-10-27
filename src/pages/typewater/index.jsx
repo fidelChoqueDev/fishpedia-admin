@@ -1,11 +1,11 @@
 import "./index.css";
 
-function Contact() {
+function TypeWater() {
   return (
     <div className="page display-flex justify-content-center align-items-center">
-      <div className="panel">Contact</div>
+      <div className="panel">Typewater</div>
     </div>
   );
 }
 
-export default Contact;
+export default TypeWater;
