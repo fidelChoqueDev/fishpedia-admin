@@ -13,7 +13,7 @@ function Sidebar() {
         <div className="display-flex space-between col">
           {pages.map((page) => {
             return (
-              <a href={page.href} className="sidebarItem">
+              <a href={page.href} key={page.href} className="sidebarItem">
                 {page.name}
               </a>
             );

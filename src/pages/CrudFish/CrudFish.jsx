@@ -32,6 +32,8 @@ const CrudFish = () => {
 
   return (
     <div className='crud-container'>
+
+      
       <div className='crud-card'>
         <table className='crud-table'>
           <thead>
