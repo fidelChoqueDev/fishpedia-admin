@@ -13,6 +13,7 @@ import {
   Home,
   Region,
   TypeWater,
+  Fishes
 } from "./pages";
 import reportWebVitals from "./reportWebVitals";
 
@@ -30,7 +31,7 @@ root.render(
             <Route path="/contact" element={<Contact />} />
             <Route path="/login" element={<Login />} />
 
-            <Route path="/fishes" element={<CrudFish/>} />
+            <Route path="/fishes" element={<Fishes/>} />
             <Route path="/country" element={<Country />} />
             <Route path="/region" element={<Region />} />
             <Route path="/typewater" element={<TypeWater />} />
