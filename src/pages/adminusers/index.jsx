@@ -1,11 +1,11 @@
 import "./index.css";
 
-function Contact() {
+function AdminUsers() {
   return (
     <div className="page display-flex justify-content-center align-items-center">
-      <div className="panel">Contact</div>
+      <div className="panel">Admin Users</div>
     </div>
   );
 }
 
-export default Contact;
+export default AdminUsers;

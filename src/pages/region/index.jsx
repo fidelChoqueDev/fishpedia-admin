@@ -1,11 +1,11 @@
 import "./index.css";
 
-function Contact() {
+function Region() {
   return (
     <div className="page display-flex justify-content-center align-items-center">
-      <div className="panel">Contact</div>
+      <div className="panel">Region</div>
     </div>
   );
 }
 
-export default Contact;
+export default Region;

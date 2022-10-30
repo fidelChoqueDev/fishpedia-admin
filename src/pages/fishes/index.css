@@ -1,0 +1,117 @@
+input{
+  height:25px;
+  border:unset;
+  border-radius: 5px;
+  margin-top:3px
+}
+input[type="checkbox"]{
+  border:unset
+}
+
+label{
+  color: gray;
+}
+.crud-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.crud-card {
+  background-color: #f1e4ee;
+  width: 1000px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 10px;
+}
+.crud-fish {
+ width: 100%;
+  display: flex;
+  flex-wrap:wrap;
+  overflow: auto;
+}
+
+.crud-table {
+  width: 100%;
+}
+
+.crud-table > thead {
+  height: 50px;
+  width: 100%;
+}
+
+.crud-table > tbody > * {
+  text-align: center;
+  height: 50px;
+}
+
+.curd-option {
+  display: flex;
+  justify-content: flex-end;
+  gap: 3px;
+  padding-right: 10px;
+}
+
+.options-button,
+.create-button {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  border-radius: 5px;
+  background-color: #045f98;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.options-button:active {
+  transform: scale(0.9);
+}
+
+.options-button > img {
+  width: 25px;
+  height: auto;
+}
+
+.create-button {
+  color: white;
+  align-self: flex-end;
+  margin: 10px;
+  width: 120px;
+  height: 38px;
+  display: flex;
+}
+
+.create-button > img {
+  width: 25px;
+  height: auto;
+}
+
+.create-button > h4 {
+  width: 100%;
+  margin-right: 20px;
+}
+.test {
+  border: 1px solid red;
+}
+.form-group{
+  display: flex;
+  flex-direction: column;
+}
+.fish-img{
+  height:150px;
+  width: 100%;
+}
+hr{
+  border: 3px dashed black;
+  width: 100%;
+}
+.crud-fish-left{
+  width:66%
+}
+.crud-fish-right{
+  width:34%
+}
