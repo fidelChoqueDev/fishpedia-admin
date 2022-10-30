@@ -1,0 +1,112 @@
+.boxmain {
+  z-index: index 0;
+  display: grid;
+  align-items: center;
+  width: 100%;
+  max-width: 100%;
+  justify-content: center;
+  place-items: center;
+  gap: 1rem/* 16px */;
+  background-color: var(--buttonbackground);
+  background-size: cover;
+  background-position: center;
+
+  min-height: 100vh;
+  background-image: url(../../assets/bottom-right-pattern.svg);
+}
+.boxmain > * {
+  grid-column-start: 1;
+  grid-row-start: 1;
+}
+
+
+.imgLogo{
+  margin-left: auto;
+  margin-right: auto;
+  height: 3rem/* 48px */;
+  width: auto;
+  margin-top: 1 rem/* 24px */;
+}
+
+.titleRegister {
+  margin-top: 1.5rem/* 24px */;
+  text-align: center;
+  font-size: 1.875rem/* 30px */;
+  line-height: 2.25rem/* 36px */;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  --tw-text-opacity: 1;
+  color: rgb(17 24 39 / var(--tw-text-opacity));
+}
+
+.boxbutton{
+display: flex;
+justify-content: center;
+}
+
+.reg-card {
+  background-color: #f1e4ee; /*cambiar con el color de figma*/
+  width: 100% /*360px ancho del card*/;
+  height: 410px;
+  padding: 20px;
+  border-radius: 20px;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+
+  flex-shrink: 0;
+  max-width: 24rem /*384px reajuste de ancho card*/;
+  
+}
+.reg-card:focus{
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+ 
+.reg-card > input {
+  border: none;
+  height: 30px;
+  width: 80%;
+}
+
+
+.reg-button {
+  --tw-bg-opacity: 1;
+  background-color: rgb(5 119 190 / var(--tw-bg-opacity));
+  /*background-color: #045f98;*/
+  color: white;
+  height: 2rem/*40px*/;
+  border-radius: 5px;
+  width: 95%;
+  display: flex;
+  align-items: center;
+
+  margin-right: 1rem/*32px*/;
+  cursor: pointer;
+  padding-left: 1rem/*16px*/;
+  padding-right: 1rem/*16px*/;
+  justify-content: center;
+  text-align: center;
+  font-size: 0.875rem/*14px*/;
+  line-height: 1.25rem/* 20px */;
+  line-height: 1em;
+  min-height: 3rem/* 48px */;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-transform: var(--btn-text-case, uppercase);
+  -webkit-text-decoration-line: none;
+  -webkit-text-decoration-line: none;
+  text-decoration-line: none;
+}
+
+.reg-button > img {
+  width: 17%;
+  height: 1.25rem; /*20px*/
+  margin: 0.75rem; /*12px*/
+}
+  
