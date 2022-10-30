@@ -7,7 +7,7 @@
   justify-content: center;
   place-items: center;
   gap: 1rem/* 16px */;
-  background-color: rgb(5 119 190 );
+  background-color: var(--buttonbackground);
   background-size: cover;
   background-position: center;
 

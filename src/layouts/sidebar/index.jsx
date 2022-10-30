@@ -4,7 +4,7 @@ let pages = [
   { name: "Country", href: "/country" },
   { name: "Fishes", href: "/fishes" },
   { name: "Type Water", href: "/typewater" },
-  { name: "Admin Users", href: "/adminusers" },
+  { name: "Admin Users", href: "/register-page" },
 ];
 function Sidebar() {
   return (
