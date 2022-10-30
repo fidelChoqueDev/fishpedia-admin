@@ -5,6 +5,7 @@ import "./index.css";
 import { Footer, Header, Sidebar } from "./layouts";
 import Login from "./pages/login/Login";
 import CrudFish from "./pages/CrudFish/CrudFish";
+import RegisterPage from "./pages/register-page/RegisterPage";
 import {
   About,
   AdminUsers,
@@ -35,7 +36,7 @@ root.render(
             <Route path="/country" element={<Country />} />
             <Route path="/region" element={<Region />} />
             <Route path="/typewater" element={<TypeWater />} />
-            <Route path="/adminusers" element={<AdminUsers />} />
+            <Route path="/register-page" element={<RegisterPage />} />
           </Routes>
         </div>
       </div>

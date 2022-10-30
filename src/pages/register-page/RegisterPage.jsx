@@ -2,7 +2,7 @@ import { useForm } from 'react-hook-form';
 import LogoImage from '../../assets/logo_image.svg'
 import Registro from '../../assets/icon/🦆 icon _user_.png'
 import Reset from '../../assets/icon/🦆 icon _reset_.svg'
-import '../RegisterPage.css'
+import './RegisterPage.css'
 
 function RegisterPage () {
   const {register, formState: {errors}, watch, handleSubmit} = useForm({
