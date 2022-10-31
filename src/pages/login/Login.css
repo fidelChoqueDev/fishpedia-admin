@@ -33,7 +33,6 @@
   font-weight: 600;
 }
 
-
 .login-button {
   background-color: #045f98;
   color: white;
@@ -54,4 +53,7 @@
   margin-right: 7%;
   font-size: 15px;
   font-weight: 100;
+}
+.sidebar {
+  display: none;
 }

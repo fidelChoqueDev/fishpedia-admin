@@ -90,7 +90,7 @@ function Country() {
   };
 
   return (
-    <div>
+    <div className="page display-flex justify-content-center align-items-center">
       <div className="panel">
         <div id="countryHeader">
           <div>COUNTRY</div>

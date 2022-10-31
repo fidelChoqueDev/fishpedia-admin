@@ -1,7 +1,6 @@
 import logo from "../../assets/logo.png";
 import "./index.css";
 let routes = [
-  { href: "/", text: "Dashboard" },
   { href: "/contact", text: "Contact" },
   { href: "/about", text: "About" },
 ];

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import DeleteIcon from "../../assets/icon/🦆 icon _delete_.png";
-import CreateIcon from "../../assets/icon/🦆 icon _create_.png";
 import ReadMoreIcon from "../../assets/icon/read-more.png";
+import CreateIcon from "../../assets/icon/🦆 icon _create_.png";
+import DeleteIcon from "../../assets/icon/🦆 icon _delete_.png";
 import "./index.css";
 let fishData = {};
 const CrudFish = () => {
@@ -31,8 +31,8 @@ const CrudFish = () => {
   };
 
   return (
-    <div className="crud-container">
-      <div className="crud-card">
+    <div className="page display-flex justify-content-center align-items-center">
+      <div className="crud-card panel">
         <form id="fishForm">
           <div className="crud-fish">
             <div className="crud-fish-left display-flex flex-flow">

@@ -1,13 +1,13 @@
 .crud-container {
-  width: 100%;
+  width: 70%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .crud-card {
-  background-color: #F1E4EE;
-  width: 1000px;
+  background-color: #f1e4ee;
+  width: 100rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -16,7 +16,7 @@
 }
 
 .crud-table {
-  width: 100%;
+  max-width: 50rem;
 }
 
 .crud-table > thead {
@@ -36,13 +36,15 @@
   padding-right: 10px;
 }
 
-.options-button, .create-button{
+.options-button,
+.create-button {
   display: flex;
   align-items: center;
   justify-items: center;
   border-radius: 5px;
   background-color: #045f98;
-  padding: 5px;
+  margin: 0.5rem;
+  padding: 0.5rem 2rem;
   cursor: pointer;
 }
 
@@ -51,25 +53,44 @@
 }
 
 .options-button > img {
-  width: 25px;
+  width: 1.5rem;
   height: auto;
 }
 
 .create-button {
   color: white;
   align-self: flex-end;
-  margin: 10px;
-  width: 120px;
-  height: 38px;
+  padding: 0.5rem 2rem;
+  height: 2.5rem;
   display: flex;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  justify-content: center;
+  border-radius: 0.25rem;
 }
 
 .create-button > img {
-  width: 25px;
+  width: 1.5rem;
   height: auto;
 }
 
 .create-button > h4 {
   width: 100%;
   margin-right: 20px;
+}
+.region {
+  display: flex;
+  max-width: 50rem;
+
+  flex-direction: column;
+}
+.footerRegion {
+  display: grid;
+  justify-content: end;
+  max-width: 50rem;
+}
+#regionPanel {
+  min-width: 40rem;
 }
