@@ -47,7 +47,7 @@ justify-content: center;
 .reg-card {
   background-color: #f1e4ee; /*cambiar con el color de figma*/
   width: 100% /*360px ancho del card*/;
-  height: 410px;
+  height: 29rem /*410px*/;
   padding: 20px;
   border-radius: 20px;
   display: flex;
