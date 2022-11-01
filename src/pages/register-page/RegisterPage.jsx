@@ -25,8 +25,11 @@ function RegisterPage () {
         <div className='reg-card'>
           <img className='imgLogo' src={LogoImage} alt="logo" />
           <h2 className='titleRegister'>Register your account</h2>
-
-          <input type="text" {...register('nombre', {required:true, maxLength:10})} placeholder='Nick'/>
+          
+          <input type="text" {...register('nombre', {
+            required:true,
+            autofocus:true, 
+            maxLength:10})} placeholder='Nick'/>
           {errors.nombre?.type === 'required' && <p>El campo Nombre es requerido</p>}
           {errors.nombre?.type === 'maxLength' && <p>El campo nombre debe tener menos de 10 caracteres</p>}
 
